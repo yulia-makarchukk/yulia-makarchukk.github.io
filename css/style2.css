@@ -1,0 +1,107 @@
+/* Обнулення */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* шрифти */
+@font-face {
+  font-family: "Ruhl";
+  src: url("/fonts/FrankRuhlLibre-Regular.ttf");
+}
+@font-face {
+  font-family: "Ruhl Medium";
+  src: url("/fonts/FrankRuhlLibre-Medium.ttf");
+}
+@font-face {
+  font-family: "Vibes";
+  src: url("/fonts/GreatVibes-Regular.ttf");
+}
+/* Налаштування для демонстрації */
+
+html {
+  font-size: 62.5%;
+  --header1: calc(0rem + 0.1px);
+  --header2: calc(3.5rem + 1vw);
+  
+
+  --text: calc(1rem + 0.6vw);
+  --big: calc(6rem + 1vw);
+
+}
+/* Застосування налаштувань */
+/* Логотип */
+h1 {
+  font-size: var(--header1);
+}
+li,
+button,
+label,
+input,
+a,
+/* текст */
+p {
+  font-size: var(--text);
+}
+/* Заголовки */
+h2 {
+  font-size: var(--header2);
+}
+/* Підзаголовки */
+h3 {
+  font-size: var(--header3);
+}
+/* додаток */
+h4,
+h5 {
+  font-size: var(--header4);
+}
+/* Вигляд для демонстрації */
+ul {
+  list-style: none;
+}
+/* зміст */
+a {
+  text-decoration: none;
+  color: black;
+}
+/* розміщення для тексту на 1 стр. */
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* вигляд для тексту на 1 стр. */
+body {
+  font-family: "Ruhl", sans-serif;
+  animation: opening 1s ease-in-out forwards;
+}
+h1 {
+  font-family: "Vibes", sans-serif;
+}
+
+/* полоска під градієнт */
+.main-head {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  position: relative;
+}
+/* зміст вигляд */
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 1rem 0rem;
+}
+#logo {
+  flex: 1 1 20rem;
+}
+/* заголовок */
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 20rem;
+}
